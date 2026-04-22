@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    color: white;
+    text-align: center;
+    background: #0f172a;
+}
+
+/* ANIMATED BACKGROUND */
+.background {
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, #1e3a8a, #0f172a);
+    animation: moveBg 10s infinite linear;
+    z-index: -1;
+}
+
+@keyframes moveBg {
+    0% { transform: translate(0,0); }
+    50% { transform: translate(-10%, -10%); }
+    100% { transform: translate(0,0); }
+}
+
+/* CENTER */
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* BUTTON */
+button {
+    padding: 12px 25px;
+    border: none;
+    background: #3b82f6;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #2563eb;
+    transform: scale(1.05);
+}
+
+/* PROJECT GRID */
+.grid {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    width: 200px;
+}
+
+.card img {
+    width: 80px;
+}
+
+.app-page {
+    margin-top: 100px;
+}
+
+.app-icon {
+    width: 100px;
+}
